@@ -1,0 +1,7 @@
+import numpy as np
+import pandas as pd
+data = pd.read_csv('Untitled spreadsheet.csv')
+print(data)
+df = pd.DataFrame({'customer id': [2,19,4,21,34,44,62,27,46,38,14,24,39,20],
+                'amount': [340,570,650,1100,460,780,1010,1200,890,980,1000,870,700,320]})
+df[(df['amount']>1000)]
